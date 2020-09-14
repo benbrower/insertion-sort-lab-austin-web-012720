@@ -4,7 +4,7 @@ function findMinAndReturn(arr) {
   for (i = 0; i < arr.length; i++){
     if (arr[i] < min){
       min = arr[i];
-      index = i
+      index = i;
     }
   }
   console.log(arr, min, index);
