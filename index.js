@@ -1,4 +1,4 @@
-function findMinAndReturn(arr) {
+function findMinAndRemove(arr) {
   let min = arr[0];
   let index = 0;
   for (let i = 0; i < arr.length; i++){
@@ -17,7 +17,7 @@ function selectionSort(arr){
   while (arr.length > 0){
     console.log('arr before return', arr);
     console.log('sorted before return', sorted);
-    sorted.push(findMinAndReturn(arr));
+    sorted.push(findMinAndRemove(arr));
     console.log('arr after return', arr);
     console.log('sorted after return', sorted);
 
