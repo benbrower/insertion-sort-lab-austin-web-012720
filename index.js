@@ -13,7 +13,7 @@ function findMinAndReturn(arr) {
 
 function selectionSort(arr){
   let sorted = [];
-  while (arr.length){
+  while (arr.length > 0){
     console.log('arr before return', arr);
     console.log('sorted before return', sorted);
     sorted.push(findMinAndReturn(arr));
