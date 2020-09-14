@@ -8,7 +8,7 @@ function findMinAndReturn(arr) {
     }
   }
   console.log(arr, min, index);
-  return arr.slice(index, 1);
+  return arr.splice(index, 1);
 }
 
 function selectionSort(arr){
