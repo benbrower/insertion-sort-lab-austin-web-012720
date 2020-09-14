@@ -16,7 +16,8 @@ function selectionSort(arr){
   while (arr.length > 0){
     console.log('arr before return', arr);
     console.log('sorted before return', sorted);
-    sorted.push(findMinAndReturn(arr));
+    let newMin = findMinAndReturn(arr)
+    sorted.push(newMin);
     console.log('arr after return', arr);
     console.log('sorted after return', sorted);
 
