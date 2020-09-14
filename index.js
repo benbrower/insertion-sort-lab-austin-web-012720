@@ -8,7 +8,8 @@ function findMinAndReturn(arr) {
     }
   }
   console.log(arr, min, index);
-  return arr.splice(index, 1);
+  arr.splice(index, 1);
+  return min;
 }
 
 function selectionSort(arr){
@@ -16,8 +17,7 @@ function selectionSort(arr){
   while (arr.length > 0){
     console.log('arr before return', arr);
     console.log('sorted before return', sorted);
-    let newMin = findMinAndReturn(arr)
-    sorted.push(newMin);
+    sorted.push(findMinAndReturn(arr));
     console.log('arr after return', arr);
     console.log('sorted after return', sorted);
 
