@@ -7,14 +7,19 @@ function findMinAndReturn(arr) {
       index = i
     }
   }
-  console.log(arr, min, index)
+  console.log(arr, min, index);
   return arr.slice(index, 1);
 }
 
 function selectionSort(arr){
   let sorted = [];
   while (arr.length){
+    console.log('arr before return', arr);
+    console.log('sorted before return', sorted);
     sorted.push(findMinAndReturn(arr));
+    console.log('arr after return', arr);
+    console.log('sorted after return', sorted);
+
   }
   return sorted;
 }
