@@ -7,6 +7,7 @@ function findMinAndReturn(arr) {
       index = i
     }
   }
+  console.log(arr, min, index)
   return arr.slice(index, 1);
 }
 
