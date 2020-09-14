@@ -8,8 +8,8 @@ function findMinAndRemove(arr) {
     }
   }
   console.log(arr, min, index);
-  arr.splice(index, 1);
-  return min;
+  return arr.splice(index, 1)[0];
+  // return min;
 }
 
 function selectionSort(arr){
